@@ -1,0 +1,95 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f6ff;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styling */
+#forum-categories, #latest-discussions {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#forum-categories h2, #latest-discussions h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#forum-categories ul, #latest-discussions ul {
+    list-style-type: none;
+}
+
+#forum-categories ul li, #latest-discussions ul li {
+    margin-bottom: 10px;
+}
+
+#forum-categories ul li a, #latest-discussions ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#forum-categories ul li a:hover, #latest-discussions ul li a:hover {
+    color: #007bff;
+}
+
+/* Footer styling */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
