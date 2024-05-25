@@ -1,0 +1,76 @@
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+}
+
+.form-group.col-md-6 {
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 20px;
+}
+
+.form-group.col-md-4 {
+    flex: 0 0 calc(33.3333% - 10px);
+    margin-right: 20px;
+}
+
+.form-group.col-md-2 {
+    flex: 0 0 calc(16.6667% - 10px);
+    margin-right: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select.form-control {
+    appearance: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Checkbox styling */
+.form-check-input {
+    margin-right: 5px;
+}
