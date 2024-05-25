@@ -88,7 +88,8 @@ body {
   }
   
   .card-title {
-    color: #333;
+    min-width: 60%;
+    min-height: fit-content;
     font-size: 1.5rem;
     font-weight: bold;
   }
