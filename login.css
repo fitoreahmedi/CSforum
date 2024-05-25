@@ -1,0 +1,70 @@
+.dropdown-menu form {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for form labels */
+.dropdown-menu .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for form inputs */
+.dropdown-menu .form-control {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for form checkbox */
+.dropdown-menu .form-check-input {
+    margin-right: 5px;
+}
+
+/* Styling for submit button */
+.dropdown-menu .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styling for dropdown items */
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Styling for dropdown divider */
+.dropdown-menu .dropdown-divider {
+    margin: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Styling for cover image */
+.cover-image {
+    background-image: url('your-cover-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
