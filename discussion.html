@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Layout</title>
+    <link rel="stylesheet" href="discussion.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="shtul.png" alt="Logo"></a>
+            </div>
+            <div class="group_title">
+                <h2>Group Title</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile1.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Members</h2>
+            <ul>
+                <li>Altin</li>
+                <li>Ardit</li>
+                <li>Luli</li>
+                <li>Jon</li>
+                <li>Eriona</li>
+                <li>Fitore</li>
+                <li>Amar</li>
+                <li>Azeem</li>
+                <li>Agon</li>
+                <li>Kaltrina</li>
+                <li>Kendal</li>
+                <li>Moiz</li>
+            </ul>
+        </div>
+        <div class="discussion">
+                <div id="messages"></div>
+        </div>
+        <div class="chat-input">
+            <form id="chat-form" action="#">
+                <input type="text" id="username-input" placeholder="Enter your username..." required>
+                <input type="text" id="message-input" placeholder="Type a message..." required>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('chat-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var usernameInput = document.getElementById('username-input');
+        var messageInput = document.getElementById('message-input');
+        var username = usernameInput.value.trim();
+        var messageText = messageInput.value.trim();
+
+        if (username !== "" && messageText !== "") {
+            var messagesDiv = document.getElementById('messages');
+            var newMessage = document.createElement('p');
+            newMessage.innerHTML = "<strong>" + username + ":</strong> " + messageText;
+            messagesDiv.appendChild(newMessage);
+            messageInput.value = "";
+            messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to the bottom
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
