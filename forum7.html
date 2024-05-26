@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Languages and Automata</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="topmenu">
+                <ul>
+                    <li class="profile-pic"><img src="logo.png" alt="Profile Picture"></li>
+                    <li class="search-container">
+                        <form action="/search">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="menu-right">
+                        <a href="home.html">HOME</a>
+                        <a href="login.html">LOG IN</a>
+                        <a href="signin.html">SIGN </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="sidebar">
+            <nav class="mainmenu">
+                <ul>
+                    <li class="semester"><a href="#">1st Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">Linear Algebra</a></li>
+                            <li><a href="#">Structural Programming</a></li>
+                            <li><a href="#">Introduction to computer science</a></li>
+                        </ul>
+                    </li>
+                    <li class="semester"><a href="#">2nd Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">OOP</a></li>
+                            <li><a href="#">Calculus</a></li>
+                            <li><a href="#">Internet Technologies</a></li>
+                        </ul>
+                    </li>
+                    <li class="semester"><a href="#">3rd Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">Computer Architecture</a></li>
+                            <li><a href="#">Data structures and algorithms</a></li>
+                            <li><a href="#">Discrete Structures</a></li>
+                            <li><a href="#">Automata and Formal Languages</a></li>
+                        </ul>
+                    </li>
+                    <li class="semester"><a href="#">4th Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">Client Side Programming</a></li>
+                            <li><a href="#">Applied Probability and Statistics</a></li>
+                            <li><a href="#">Databases</a></li>
+                           <li>,<a href="#">Operating Systems</a></li> 
+                        </ul>
+                    </li>
+                    <li class="semester"><a href="#">5th Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">Computer Networks</a></li>
+                            <li><a href="#">Web Programming</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="semester"><a href="#">6th Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">Software Engineering</a></li>
+                            <li><a href="#">Data Mining</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="semester"><a href="#">7th Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">Logical and Functional Programming</a></li>
+                            <li><a href="#">Distributed Systems</a></li>
+                            <li><a href="#">Computer Graphics</a></li>
+                        </ul>
+                    </li>
+                    <li class="semester"><a href="#">8th Sem</a>
+                        <ul class="subject-dropdown">
+                            <li><a href="#">Cloud Infrastructure and Technologies</a></li>
+                            <li><a href="#">Computer Security</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h1 class="linear-algebra">cs/Formal Languages and Automata </h1>
+            <button id="create-post-btn">Create Post</button>
+            <div id="post-form" style="display: none;">
+                <textarea id="post-title" rows="1" cols="50" placeholder="Title"></textarea>
+                <textarea id="post-content" rows="4" cols="50" placeholder="Write your post here..."></textarea>
+                <button id="submit-post-btn">Submit Post</button>
+            </div>
+        
+        <div id="posts">
+            <div class="post"><div class="post-header"><img src="images.png" alt="username's avatar" class="avatar"><div class="user-info"><div class="username">username</div></div><div class="post-body"><div class="post-title">e</div><div class="post-content">d</div></div></div><div class="post-buttons"><button class="upvote-btn">▲</button><span class="score-display">0</span><button class="downvote-btn">▼</button><button class="share-btn">Share</button><button class="delete-post-btn">Delete</button></div></div>
+            <div class="post"><div class="post-header"><img src="images.png" alt="username's avatar" class="avatar"><div class="user-info"><div class="username">username</div></div><div class="post-body"><div class="post-title">e</div><div class="post-content">d</div></div></div><div class="post-buttons"><button class="upvote-btn">▲</button><span class="score-display">0</span><button class="downvote-btn">▼</button><button class="share-btn">Share</button><button class="delete-post-btn">Delete</button></div></div>
+            <div class="post"><div class="post-header"><img src="images.png" alt="username's avatar" class="avatar"><div class="user-info"><div class="username">username</div></div><div class="post-body"><div class="post-title">e</div><div class="post-content">d</div></div></div><div class="post-buttons"><button class="upvote-btn">▲</button><span class="score-display">0</span><button class="downvote-btn">▼</button><button class="share-btn">Share</button><button class="delete-post-btn">Delete</button></div></div>
+            <div class="post"><div class="post-header"><img src="images.png" alt="username's avatar" class="avatar"><div class="user-info"><div class="username">username</div></div><div class="post-body"><div class="post-title">e</div><div class="post-content">d</div></div></div><div class="post-buttons"><button class="upvote-btn">▲</button><span class="score-display">0</span><button class="downvote-btn">▼</button><button class="share-btn">Share</button><button class="delete-post-btn">Delete</button></div></div>
+            <div class="post"><div class="post-header"><img src="images.png" alt="username's avatar" class="avatar"><div class="user-info"><div class="username">username</div></div><div class="post-body"><div class="post-title">e</div><div class="post-content">d</div></div></div><div class="post-buttons"><button class="upvote-btn">▲</button><span class="score-display">0</span><button class="downvote-btn">▼</button><button class="share-btn">Share</button><button class="delete-post-btn">Delete</button></div></div>
+            <div class="post"><div class="post-header"><img src="images.png" alt="username's avatar" class="avatar"><div class="user-info"><div class="username">username</div></div><div class="post-body"><div class="post-title">e</div><div class="post-content">d</div></div></div><div class="post-buttons"><button class="upvote-btn">▲</button><span class="score-display">0</span><button class="downvote-btn">▼</button><button class="share-btn">Share</button><button class="delete-post-btn">Delete</button></div></div>
+        </div>
+         
+        </main>
+    </div>
+    <script src="forum.js"></script>
+</body>
+</html>
+
