@@ -38,6 +38,11 @@ body {
     font-size: 18px;
 }
 
+.group_title{
+    width: 250px;
+    margin-left: 30px;
+}
+
 .container {
     display: flex;
     height: 90vh;
@@ -52,8 +57,9 @@ body {
 }
 
 .sidebar h2 {
-    margin: 0 0 20px;
-    font-size: 1.5em;
+    margin: 0 0 40px;
+    font-size: 2em;
+    
 }
 
 .sidebar ul {
@@ -63,7 +69,7 @@ body {
 
 .sidebar ul li {
     margin: 15px 0;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 .discussion {
@@ -78,19 +84,7 @@ body {
 }
 
 
-.wumpus-container {
-    text-align: center;
-}
 
-.wumpus-container img {
-    max-width: 200px;
-    margin-bottom: 20px;
-}
-
-.wumpus-container p {
-    font-size: 1.2em;
-    color:#36393f;
-}
 
 .chat-input {
     position: absolute;
@@ -134,3 +128,4 @@ body {
 .chat-input button:hover {
     background-color: #5a6fb2;
 }
+
