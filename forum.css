@@ -1,0 +1,491 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #77c1e3;
+    color: white;
+    z-index: 1000;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.topmenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.topmenu li {
+    margin-right: 20px;
+}
+
+.topmenu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.topmenu a:hover {
+    background-color: #6bc1e6;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-container form {
+    display: flex;
+    width: 50%;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    background-color: #37b3c9;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #73acd2;
+}
+
+.profile-pic {
+    margin-right: auto;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-right a {
+    margin-left: 20px;
+}
+
+.linear-algebra {
+    color: #5887dd; 
+    font-weight:bold;
+    font: size 40px;
+    text-align: center;
+}
+
+
+
+.mainmenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.mainmenu a:hover {
+    background-color: #5887dd;
+}
+
+.semester ul {
+    display: none;
+}
+
+
+
+.subject-dropdown a {
+    padding-left: 20px; /* Indent subjects under semester */
+}
+
+.subject-dropdown {
+    background-color: #4fa2ce;
+}
+
+main {
+    margin-left: 250px; /* Same width as sidebar */
+    padding: 80px 20px 20px 20px; /* Adjust padding to account for the top menu bar */
+    flex: 1;
+}
+
+#create-post-btn {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #7be4e4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    position: fixed;
+    right: 20px;
+    top: 80px;
+}
+
+/* Add before pseudo-element for the semester links */
+.semester > a::before {
+    content: ">";
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Add down arrow icon when the semester link is clicked */
+.semester.clicked > a::before {
+    content: "▼";
+}
+
+/* Show the dropdown list when the semester link is clicked */
+.semester.clicked > ul {
+    display: block;
+}
+
+
+#create-post-btn:hover {
+    background-color: #4d93da;
+}
+
+#post-form {
+    margin: 20px 0;
+}
+
+#post-title, #post-content {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit-post-btn {
+    padding: 10px 20px;
+    background-color: #5ab9d5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+}
+
+#submit-post-btn:hover {
+    background-color: #89a3dc;
+}
+
+#posts {
+    margin-top: 20px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.post-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.sidebar {
+    width: 200px;
+    background-color: #6cb1cb;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 60px; 
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+.search-container button {
+    padding: 10px 20px; 
+    background-color: #5887dd; /* Blue color */
+    border: 2px solid #5887dd; /* Matching border color */
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold; /* Make text bold */
+}
+
+/* Neon-like effect for buttons */
+.search-container button:hover,
+#create-post-btn:hover,
+#submit-post-btn:hover {
+    background-color: #5887dd;
+    box-shadow: 0 0 10px #5887dd,
+                0 0 20px #5887dd,
+                0 0 40px #5887dd,
+                0 0 80px #5887dd; /* Increase glow effect */
+}
+
+#posts {
+    margin-top: 20px;
+}
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.post-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-body {
+    flex-grow: 1;
+}
+
+.post-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.post-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.upvote-btn,
+.downvote-btn {
+    color: #ccc;
+}
+
+.upvote-btn.active,
+.downvote-btn.active {
+    color: #ff4500; /* Reddit's upvote color */
+}
+
+.upvote-btn:hover,
+.downvote-btn:hover {
+    color: #ff4500;
+}
+
+.share-btn {
+    color: #0079d3;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.share-btn:hover {
+    background-color: #0079d3;
+    color: white;
+}
+
+.delete-post-btn {
+    color: #d9534f;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.delete-post-btn:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+.score-display {
+    font-size: 16px;
+    margin: 0 10px;
+    color: #333;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.post-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-body {
+    flex: 1;
+}
+
+.post-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.post-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.upvote-btn, .downvote-btn {
+    color: #ccc;
+}
+
+.upvote-btn.active, .downvote-btn.active {
+    color: #ff4500; /* Reddit's upvote color */
+}
+
+.upvote-btn:hover, .downvote-btn:hover {
+    color: #ff4500;
+}
+
+.share-btn {
+    color: #0079d3;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.share-btn:hover {
+    background-color: #0079d3;
+    color: white;
+}
+
+.delete-post-btn {
+    color: #d9534f;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.delete-post-btn:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+.score-display {
+    font-size: 16px;
+    margin: 0 10px;
+    color: #333;
+}
+
+
+.post-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #5887dd; /* Blue color for the title */
+}
+
+.post-content {
+    color: #333; /* Dark color for the content */
+}
+
+.upvote-btn, .downvote-btn {
+    color: #ccc;
+}
+
+.upvote-btn:hover, .downvote-btn:hover {
+    color: #ff4500; /* Reddit's upvote color */
+}
+
+.share-btn {
+    color: #0079d3;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.share-btn:hover {
+    background-color: #0079d3;
+    color: white;
+}
+
+.delete-post-btn {
+    color: #d9534f;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.delete-post-btn:hover {
+    background-color: #d9534f;
+    color: white;
+}
