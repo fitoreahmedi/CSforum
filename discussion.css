@@ -69,10 +69,12 @@ body {
 .discussion {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #36393f;
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin-bottom: 109px;
 }
 
 
@@ -97,8 +99,11 @@ body {
     padding: 10px;
     height: 30px;
     margin-bottom: 30px;
-    background-color: #36393f;
-    box-shadow: 0 -2px 5px #36393f;
+    background-color: #2d2e2e;
+    margin: 20px;
+    padding-left: 272px;
+    margin-bottom: 52px;
+
 }
 
 .chat-input form {
