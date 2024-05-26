@@ -196,3 +196,30 @@ footer{
     background-color: #00afef;
     text-align: center;
 }
+
+.join-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color: #45a049;
+}
+
+.col-sm{
+    margin-bottom: 20px;
+}
+#join_button{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#join_button:hover{
+    background-color: #00afef;
+}
