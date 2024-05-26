@@ -235,6 +235,21 @@ main {
     padding-right: 20px; 
 }
 
+/* Add down arrow icon when the semester link is clicked */
+.semester.clicked > a::before {
+    content: "▼";
+}
+
+/* Hide arrow when semester link is not clicked */
+.semester > a::before {
+    content: ">";
+}
+
+/* Show the dropdown list when the semester link is clicked */
+.semester.clicked > ul {
+    display: block;
+}
+
 .search-container button {
     padding: 10px 20px; 
     background-color: #5887dd; /* Blue color */
