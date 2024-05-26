@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Poppins;
+}
+
+#main_nav{
+    background-color: #00afef;
+    height: 100px;
+} 
+
+#main_nav ul li a{
+    font-size: large;
+    display: flex;
+    margin-right: 10px;
+}
+.headertext{
+    font-family: Poppins;
+    
+}
+.navbar-brand{
+    font-family: Poppins;
+}
+.navbar-brand{
+    font-family: Poppins;
+}
+.categories-titles{
+    padding-bottom:40px ;
+
+}
+#headerr{
+    padding-top: 120px;
+}
+#categories{
+    padding-top: 160px;
+}
+.leftklass{
+    padding-top: 130px;
+}
+#getsbtn{
+    margin-left: 40px;
+    background-color: #55c2da;
+    color: white;
+    font-family: Poppins;
+    border-radius: 50px;
+}
+.list-group:hover{
+    box-shadow: 0px 0px 20px #0b0b0b80,
+     0px 2px 2px -1px rgba(0, 0, 0, 0.25), 
+     inset 2px 2px 4px rgba(3, 47, 68, 0.5),
+     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+.card:hover{
+    text-transform: uppercase;
+}
+.card:hover{
+    box-shadow: 0px 0px 20px #0b0b0b80,
+     0px 2px 2px -1px rgba(0, 0, 0, 0.25), 
+     inset 2px 2px 4px rgba(3, 47, 68, 0.5),
+     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+.card:hover{
+    text-transform: uppercase;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f6ff;
+    color: #333;
+}
+
+/* Custom styling for rich text box */
+.rich-text-box {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Custom styling for buttons */
+  .btn-primary,
+  .btn-success {
+    border-radius: 20px;
+  }
+  
+  /* Facebook-like styling */
+  body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+  }
+
+  #main_nav{
+    background-color: #00afef;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    min-width: 60%;
+    min-height: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #4267b2;
+    border-color: #4267b2;
+  }
+  
+  .btn-success {
+    background-color: #42b72a;
+    border-color: #42b72a;
+  }
+  
+  .btn-primary:hover,
+  .btn-success:hover {
+    opacity: 0.8;
+  }
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav.mainmenu {
+    border-top: 2px solid #00afef;
+    border-bottom: 2px solid #00afef;
+    background-color: #e6e9ee;
+    text-align: center;
+}
+
+.containermainmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.containermainmenu ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.containermainmenu ul li a {
+    color: #112a67;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.containermainmenu ul li a:hover {
+    background-color: #d6c1ef;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 25px #1479ea;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
+    color: #112a67;
+    text-transform: none;
+}
+
+.dropdown li a:hover {
+    background-color: #d6c1ef;
+}
+
+
+.containermainmenu ul li:hover > .dropdown {
+    display: block;
+}
+
+footer{
+    background-color: #00afef;
+    text-align: center;
+}
